@@ -15,7 +15,7 @@ class ConversationsController < ApplicationController
                     content: params[:message]
                 }
                 ],
-                temperature: 0.7,
+                temperature: 1,
             }
         )
         text = response.dig("choices", 0, "message", "content")
